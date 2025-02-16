@@ -1,0 +1,17 @@
+---
+import { Image } from "astro:assets";
+import Luna from "../img/moon.png";
+import Sol from "../img/Sun.png";
+---
+<script src="/src/js/theme-toggle.js" defer></script>
+
+<div
+    id="theme-toggle-container"
+    class="text-white w-full h-full bg-black/60 flex justify-between items-center rounded-xl p-2 shadow-[rgba(56,130,190)_5px_5px_2px_2px] cursor-pointer"
+>
+    <div>
+        <Image src={Luna} alt="Dark" class="w-full h-full" />
+    </div>
+</div>
+
+
