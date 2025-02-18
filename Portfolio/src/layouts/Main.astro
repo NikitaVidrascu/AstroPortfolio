@@ -1,0 +1,66 @@
+---
+import Contacto from "../components/Contacto.astro";
+import Presentacion from "../components/Presentacion.astro";
+import SobreMi from "../components/SobreMi.astro";
+import Tecnologias from "../components/Tecnologias.astro";
+import Tema from "../components/Tema.astro";
+import YoutubeCopy from "../components/YoutubeCopy.astro";
+import ZeroPhone from "../components/ZeroPhone.astro";
+import ContactUs from "../components/ContactUs.astro";
+import Valorant from "../components/Valorant.astro";
+import GoogleCopy from "../components/GoogleCopy.astro";
+import Calculadora from "../components/Calculadora.astro";
+import Dronotech from "../components/Dronotech.astro";
+import "../styles/global.css";
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Portfolio Nikita</title>
+	</head>
+	<body class="h-screen w-screen bg-radial from-[#560E89] from-45% to-[#372544]">
+		
+        <!-- Escritorio -->
+        <div class="items-center justify-center hidden w-full h-full lg:flex">
+            <div class="grid justify-center w-full h-full max-h-screen grid-cols-12 gap-5 p-5 overflow-hidden grid-rows-11 max-w-screen-3xl">
+                <div class="w-full h-full col-span-5 row-span-3"><Presentacion/></div>
+                <div class="w-full h-full col-span-3 row-span-6"><SobreMi/></div>
+                <div class="w-full h-full col-span-4 row-span-3"><ContactUs/></div>
+                <div class="w-full h-full col-span-5 row-span-5"><Tecnologias/></div>
+                <div class="w-full h-full col-span-4 row-span-2"><Valorant/></div>
+                <div class="w-full h-full col-span-2 row-span-4"><GoogleCopy/></div>
+                <div class="w-full h-full col-span-2 row-span-4"><Calculadora/></div>
+                <div class="w-full h-full col-span-3 row-span-2"><YoutubeCopy/></div>
+                <div class="w-full h-full col-span-4 row-span-3"><Contacto/></div>
+                <div class="w-full h-full col-span-1 row-span-3"><Tema/></div>
+                <div class="w-full h-full col-span-3 row-span-3"><ZeroPhone/></div>
+                <div class="w-full h-full col-span-4 row-span-2"><Dronotech/></div>	
+                
+            </div>
+        </div>
+
+        <!-- Movil -->
+        <div class="flex items-center justify-center w-full h-full lg:hidden">
+            <div class="grid justify-center w-full h-full max-w-screen-sm max-h-screen grid-cols-3 gap-5 p-5 overflow-hidden grid-rows-7">
+                <div class="w-full h-full col-span-2 row-span-1"><Presentacion/></div>
+                <div class="w-full h-full col-span-1 row-span-3"><SobreMi/></div>
+                <div class="w-full h-full col-span-2 row-span-2"><Tecnologias/></div>
+                <div class="w-full h-full col-span-1 row-span-1"><Tema/></div>
+                <div class="w-full h-full col-span-2 row-span-1"><Contacto/></div>
+                <div class="w-full h-full col-span-1 row-span-1"><YoutubeCopy/></div>
+                <div class="w-full h-full col-span-1 row-span-1"><ZeroPhone/></div>
+                <div class="w-full h-full col-span-1 row-span-1"><ContactUs/></div>
+                <div class="w-full h-full col-span-2 row-span-1"><Valorant/></div>
+                <div class="w-full h-full col-span-1 row-span-1"><GoogleCopy/></div>
+                <div class="w-full h-full col-span-1 row-span-1"><Calculadora/></div>
+                <div class="w-full h-full col-span-2 row-span-1"><Dronotech/></div>
+            </div>
+        </div>
+
+	</body>
+</html>
